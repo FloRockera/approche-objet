@@ -15,14 +15,31 @@ public class TestPersonne {
 		p.adresse.numerodeRue= 5;
 		p.adresse.libelleRue= "rue de Paris";
 		p.adresse.codePostal= 53000;
-		p.adresse.ville= "Laval"; */
+		p.adresse.ville= "Laval";
 
-		//Il faut garder 3 paramètres
+	//Il faut garder 3 paramètres
 		Personne p = new Personne("Dudule","Michel",new AdressePostale(5,"rue de Paris",53000,"Laval"));
-				/*ou
+		ou
 		Personne p = new Personne("Dudule","Michel",adresse);
+
+		 "p" est une instance */
+
+
+		Personne p = new Personne("Jeff","Tuche",new AdressePostale(5,"rue de Paris",53000,"Laval"));
+		//String identite = p.getIdentite();
+		//System.out.println(identite);
+		//}
+
+		p.setNom("Daddy");
+		System.out.println(p.getIdentite());
+		p.setPrenom("Stephanie");
+		System.out.println(p.getIdentite());
 		
-		*"p" est une instance */
+		AdressePostale adresseB = new AdressePostale(15,"rue de Paris",75001,"Paris");
+		p.setAdressePostale(adresseB);
+		System.out.println(p.getIdentite());
 	}
 
 }
+
+
