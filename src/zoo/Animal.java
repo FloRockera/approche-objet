@@ -1,6 +1,6 @@
 package zoo;
 
-public class Animal {
+public abstract class Animal {
 
 	//Attributs en privé (bonnes pratiques)
 	private String nom;
@@ -14,12 +14,14 @@ public class Animal {
 		alimentation = nvalimentation;
 	}
 
+	//Methode abstraite dans la classe mere, on force les classes filles a l'avoir
+	public abstract String getFamille();
+	
 	
 	@Override
 	public String toString() {
 		return "Animal [nom=" + nom + ", type=" + type + ", alimentation=" + alimentation + "]";
 	}
-
 
 
 	@Override

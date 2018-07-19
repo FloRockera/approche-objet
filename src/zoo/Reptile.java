@@ -7,5 +7,13 @@ public class Reptile extends Animal {
 		super(nvnom, nvtype, nvalimentation);
 		
 		
+		
+		
+	}
+
+	@Override
+	public String getFamille() {
+		// TODO Auto-generated method stub
+		return "REPTILE";
 	}
 }

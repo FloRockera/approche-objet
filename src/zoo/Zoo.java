@@ -2,7 +2,7 @@ package zoo;
 
 public class Zoo {
 
-	//Attributs
+	// Attributs
 	private String nom;
 	private Zone zoneAfr;
 	private Zone zoneCar;
@@ -10,8 +10,8 @@ public class Zoo {
 	private Zone zoneRep;
 	private Zone zoneVol;
 
-	//Constructeur
-	public Zoo(String nvnom){
+	// Constructeur
+	public Zoo(String nvnom) {
 		nom = nvnom;
 		zoneAfr = new Zone("Savane Africaine");
 		zoneCar = new Zone("zone carnivore");
@@ -20,8 +20,22 @@ public class Zoo {
 		zoneVol = new Zone("Volière");
 	}
 
+	// Methode addAnimal
+	public void addAnimal(Animal animal) {
+		if (animal.getAlimentation().equals("carnivore") && animal.getFamille().equals("MAMMIFERE")) {
+			zoneCar.addAnimal(animal);
+		} else if (animal.getAlimentation().equals("herbivore") && animal.getFamille().equals("MAMMIFERE")) {
+			zoneAfr.addAnimal(animal);
+		} else if (animal.getFamille().equals("REPTILE")) {
+			zoneRep.addAnimal(animal);
+		} else if (animal.getFamille().equals("POISSON")) {
+			zoneAqu.addAnimal(animal);
+		} else if (animal.getFamille().equals("VOLATILE")) {
+			zoneVol.addAnimal(animal);
+		}
+	}
 
-	//Getters Setters
+	// Getters Setters
 	public String getNom() {
 		return nom;
 	}
@@ -68,7 +82,6 @@ public class Zoo {
 
 	public void setZoneVol(Zone zoneVol) {
 		this.zoneVol = zoneVol;
-	}	
-
+	}
 
 }

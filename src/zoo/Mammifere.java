@@ -8,4 +8,14 @@ public class Mammifere extends Animal {
 		
 		
 	}
-}
+
+	@Override
+	public String getFamille() {
+		// TODO Auto-generated method stub
+		return "MAMMIFERE";
+		
+		
+	}
+
+	}
+

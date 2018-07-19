@@ -8,4 +8,10 @@ public class Volatile extends Animal {
 		
 		
 	}
+
+	@Override
+	public String getFamille() {
+		// TODO Auto-generated method stub
+		return "VOLATILE";
+	}
 }

@@ -26,10 +26,14 @@ public class GestionZoo {
 		//Animal an2 = new Animal("toto","Taureau");
 		//System.out.println(an1.equals(an2));
 
-		zoo1.getZoneVol().addAnimal(new Volatile("bidule","oiseau","omnivore"));
-		zoo1.getZoneRep().addAnimal(new Reptile("truc","croco","carnivore"));
-		zoo1.getZoneAqu().addAnimal(new Poisson("nemo","poisson clown","herbivore"));
-		zoo1.getZoneAfr().addAnimal(new Mammifere("coco","girafe","herbivore"));
+		zoo1.addAnimal(new Volatile("bidule","oiseau","omnivore"));
+		zoo1.addAnimal(new Reptile("truc","croco","carnivore"));
+		zoo1.addAnimal(new Poisson("nemo","poisson clown","omnivore"));
+		zoo1.addAnimal(new Mammifere("coco","girafe","herbivore"));
+		
+		zoo1.addAnimal(new Mammifere("bibiche","lion","carnivore"));
+		zoo1.addAnimal(new Reptile("sssss","boa","carnivore"));
+		zoo1.addAnimal(new Mammifere("maceo","zebre","herbivore"));
 		
 		zoo1.getZoneAfr().afficher();
 		zoo1.getZoneRep().afficher();
