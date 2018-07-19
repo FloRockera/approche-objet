@@ -13,6 +13,14 @@ public class Zone {
 		animaux= new Animal [100];
 	}
 
+	public void afficher(){
+		for (int i=0; i<animaux.length; i++){
+			if (animaux[i]!= null){
+				System.out.println(animaux[i]);
+			}
+		}
+	}
+	
 	//Remplir le tableau
 	public void addAnimal(Animal animal){
 		for (int i=0; i<animaux.length; i++){

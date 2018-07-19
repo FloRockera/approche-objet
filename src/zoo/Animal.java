@@ -5,12 +5,22 @@ public class Animal {
 	//Attributs en privé (bonnes pratiques)
 	private String nom;
 	private String type;
-
+	private String alimentation;
+	
 	//Constructeur
-	public Animal( String nvnom, String nvtype){
+	public Animal( String nvnom, String nvtype, String nvalimentation){
 		nom = nvnom;
 		type = nvtype;
+		alimentation = nvalimentation;
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Animal [nom=" + nom + ", type=" + type + ", alimentation=" + alimentation + "]";
+	}
+
+
 
 	@Override
 	public int hashCode() {
@@ -43,8 +53,6 @@ public class Animal {
 		return true;
 	}
 
-
-
 	//Getters et setters
 	public String getNom() {
 		return nom;
@@ -62,7 +70,13 @@ public class Animal {
 		this.type = type;
 	}
 
+	public String getAlimentation() {
+		return alimentation;
+	}
 
+	public void setAlimentation(String alimentation) {
+		this.alimentation = alimentation;
+	}
 
 }
 
