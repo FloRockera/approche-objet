@@ -29,13 +29,19 @@ public class TestListeString {
 		for (int i = 0; i < maListe2.size(); i++) {
 			String ville = maListe2.get(i);
 			int nbLettres = ville.length();
-			
+
 			if (nbLettres > maxVal) {
 				maxVal = nbLettres;
 				maxVille = ville;
 			}
 		}
 		System.out.println(maxVille);
-	}
 
+		// Modifiez le contenu de la liste de manière à mettre tous les noms devilles en majuscules
+		for (int i = 0; i < maListe2.size(); i++) {
+			maListe2.set(i, maListe2.get(i).toUpperCase());
+			System.out.println(maListe2);
+		}
+
+	}
 }
