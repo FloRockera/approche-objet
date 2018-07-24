@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Pays {
-	
+
 	// Attributs
 	String nom;
 	int nbHab;
@@ -26,7 +26,7 @@ public class Pays {
 		return "Pays [nom=" + nom + ", nbHab=" + nbHab + ", pib=" + pib + "]";
 	}
 
-	
+
 	//Getters and Setters
 	public String getNom() {
 		return nom;
@@ -51,7 +51,7 @@ public class Pays {
 	public void setPib(double pib) {
 		this.pib = pib;
 	}
-	
-	
+
+
 
 }

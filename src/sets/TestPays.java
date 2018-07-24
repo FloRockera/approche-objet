@@ -34,13 +34,13 @@ public class TestPays {
 				max = i.getPib();
 				nomPays = i.getNom();
 
-				
+
 			}
 		}
-		
+
 		System.out.println(nomPays);
-		
-		
+
+
 
 		//Modifiez le contenu du HashSet pour mettre en majuscule le pays qui a le PIB total le plus petit
 		Iterator<Pays> iterator2 = paysSet.iterator();
@@ -55,10 +55,17 @@ public class TestPays {
 				minPays= i.getNom();
 			}
 		}
-		
+
 		System.out.println(minPays);
+		
+		
+		
 		System.out.println("=================================================");
 		
+		
+
+		//Affichez l’ensemble des pays ainsi modifiés avec leur nom, nombre d’habitants et PIB total
+
 		iterator = paysSet.iterator();
 		while (iterator.hasNext()){
 			Pays pays = iterator.next();
@@ -66,8 +73,7 @@ public class TestPays {
 				pays.setNom(minPays.toUpperCase());
 			}
 		}
-		
-		//Affichez l’ensemble des pays ainsi modifiés avec leur nom, nombre d’habitants et PIB total
+
 		System.out.println(paysSet);
 	}
 
