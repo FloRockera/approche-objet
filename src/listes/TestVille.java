@@ -65,9 +65,9 @@ public class TestVille {
 				ville.setNom(ville.getNom().toUpperCase());
 			}
 		}
-			
+
 		// Méthode toString avec "sources Generate toString" pour faire un syso dans la classe de la variable (ici "Ville")
 		System.out.println(maListe3);
-		
+
 	}
 }

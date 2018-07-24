@@ -8,24 +8,27 @@ public class Ville {
 	// Attributs
 	private String nom;
 	private int nbHab;
-	
-	//Constructeurs
+
+	// Constructeurs
 	public Ville(String nom, int nbHab) {
 		super();
 		this.nom = nom;
 		this.nbHab = nbHab;
 	}
-	
-	//Getters et Setters
+
+	// Getters et Setters
 	public String getNom() {
 		return nom;
 	}
+
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
 	public int getnbHab() {
 		return nbHab;
 	}
+
 	public void setnbHab(int nbHab) {
 		this.nbHab = nbHab;
 	}
@@ -34,6 +37,5 @@ public class Ville {
 	public String toString() {
 		return "Ville [nom=" + nom + ", nbHab=" + nbHab + "]";
 	}
-
 
 }
