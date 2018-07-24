@@ -65,23 +65,11 @@ public class TestSetInt {
 			int i = (Integer)iterator3.next();
 			if (i < 0 ) { 
 				i = -i;
-
+				System.out.println(i);
 			}
 		}
-		System.out.println(set);
 		
-		/* Set<Pays> paysSet = new HashSet<Pays>();
-        paysSet.add(new Pays("USA", 324_811_000, 55_805.204));
-        paysSet.add(new Pays("France", 67_795_000, 41_180.697));
-        paysSet.add(new Pays("Allemagne", 82_800_000, 45_888.423));
-        paysSet.add(new Pays("UK", 65_648_100, 41_158.909));
-        paysSet.add(new Pays("Italie", 60_589_445, 35_708));
-        paysSet.add(new Pays("Japon", 126_451_398, 41_300));
-        paysSet.add(new Pays("Chine", 1_415_140_963, 14_107.431));
-        paysSet.add(new Pays("Russie", 146_880_400, 24_026));
-        paysSet.add(new Pays("Inde", 1_281_935_911, 5_855.306)); */
-
-
+	
 
 	}
 }
